@@ -1,0 +1,39 @@
+
+.home-container {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .intro {
+    font-size: 20px;
+    color: #555;
+  }
+  
+  .languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .language {
+    font-size: 24px;
+    color: #007bff;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  .separator {
+    font-size: 24px;
+    color: #ccc;
+  }
+  

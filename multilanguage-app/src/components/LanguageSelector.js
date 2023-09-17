@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import "./LanguageSelector.css";
 
 function LanguageSelector() {
   const { i18n } = useTranslation();
@@ -9,11 +10,25 @@ function LanguageSelector() {
   };
 
   return (
-    <div>
-      <button onClick={() => changeLanguage("en")}>English</button>
-      <button onClick={() => changeLanguage("hi")}>Hindi</button>
-      <button onClick={() => changeLanguage("ml")}>Malayalam</button>
-      
+    <div className="language-selector">
+      <div className="language-text">
+        <h2>Choose Your Language</h2>
+        <p>Select your preferred language:</p>
+      </div>
+      <div className="language-buttons">
+        <button
+          className="language-button"
+          onClick={() => changeLanguage("en")}
+        >
+          English
+        </button>
+        <button
+          className="language-button"
+          onClick={() => changeLanguage("hi")}
+        >
+          Hindi
+        </button>
+      </div>
     </div>
   );
 }
